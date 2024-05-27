@@ -9,6 +9,10 @@ frontend:
   phases:
     build:
       commands:
+        - echo "silly bit check"
+        - nvm install 18.19.0
+        - nvm use 18.19.0
+        - nvm alias default 18.19.0
         - npm install -g @angular/cli
         - ng version
         - ng build --configuration=production
